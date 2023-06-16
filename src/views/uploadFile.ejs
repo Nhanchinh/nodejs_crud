@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/upload">Upload Files</a>
+
+    </div>
+    <span>
+        <h1>This is upload file </h1>
+    </span>
+
+    <div>
+        <div class="uploadSingle">
+            <formmethod="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+                <span style="color: rgb(79, 73, 73);"> Upload single file </span>
+                <input type="file" name="profile_pic">
+                <button>Save file</button>
+                </formmethod=>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="uploadMulti">
+            <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
+                <div>
+                    <label style="margin-left: 18px;">Select multiple images:</label>
+                    <input type="file" name="multiple_images" multiple />
+                </div>
+                <div>
+                    <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
